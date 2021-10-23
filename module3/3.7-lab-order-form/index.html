@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>jQuery Order Form</title>
+
+    <style>
+        body {
+            padding: 25px;
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+        td {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Order from jQuery Foundation</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Qty</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="number" id="qty-book" name="qty-book"></td>
+            <td><label for="qty-book">Learning jQuery</label></td>
+            <td>$39.99</td>
+            <td id="book-total">0</td>
+        </tr>
+        <tr>
+            <td><input type="number" id="qty-donation" name="qty-book"></td>
+            <td><label for="qty-donation">jQuery Donation</label></td>
+            <td>$14.99</td>
+            <td id="donation-total">0</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Grand Total</td>
+                <td id="grand-total">0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+<!-- jQuery first -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<!-- Our code second -->
+<script src="code.js"></script>
+</body>
+</html>
