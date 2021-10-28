@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        p.output {
+            background-color: papayawhip;
+            height: 25px;
+        }
+    </style>
+
+    <title>Change, Keypress, Input</title>
+</head>
+
+<body>
+
+    <h1>I Listen for Changes!</h1>
+    <label for="change-box">What is your name?</label>
+    <input type="text" id="change-box" name="change-box">
+    <p class="output" id="output-change-box"></p>
+
+    <br>
+
+    <h1>I Listen for Keypresses!</h1>
+    <label for="key-box">What is your favorite color?</label>
+    <input type="text" id="key-box" name="key-box">
+    <p class="output" id="output-key-box"></p>
+
+    <br>
+
+    <h1>I Listen for Inputs!</h1>
+    <label for="js-slider">How much do you like JavaScript?</label>
+    &#128544;<input type="range" min="1" max="5" id="js-slider" name="js-slider">&#128525;
+    <p class="output" id="output-js-slider"></p>
+
+</body>
+
+<!-- jQuery first -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<!-- Our code second -->
+<script src="code.js"></script>
+</body>
+</html>
