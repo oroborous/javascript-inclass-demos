@@ -29,9 +29,9 @@ function drawCard() {
 
 }
 
-function discardOneCard() {
+function discardOneCard(event) {
     // Get the card that was clicked
-    let clickedCard = $(this);
+    let clickedCard = $(event.target);
 
     // Remove the clicked card from the play area (its current parent)
     clickedCard.remove();
