@@ -3,66 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>jQuery Card Game</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <style>
-        h1 {
-            padding: 10px 0;
-        }
-
         body {
             text-align: center;
+            font-family: Tahoma, Verdana, sans-serif;
         }
 
-        #gameTable {
+        #grid {
+            display: grid;
+            grid-template-columns: 120px auto 120px;
             background-color: forestgreen;
-            height: 450px;
+            height: 75vh;
             border: 2px dashed darkgreen;
             border-radius: 5px;
+        }
+
+        #discard-pile {
+            height: 153px;
         }
     </style>
 </head>
 <body>
-    <div class="container w-75">
         <h1>jQuery Card Table</h1>
 
-        <div id="gameTable" class="row">
+        <div id="grid">
 
-            <div class="col-2">
+            <div>
                 <h2>Draw Deck</h2>
-                <img id="drawDeck" src="card-images/blue_back.png"
+                <img id="draw-deck" src="card-images/blue_back.png"
                      alt="blue card back"
                      height="153" width="100"/>
                 <h4>Click to draw</h4>
             </div>
 
-            <div id="playArea" class="col-8">
+            <div>
                 <h2>Play Area</h2>
                 <h4>Click a card to discard</h4>
-                <button id="discardAllButton" class="btn-primary">Discard All</button>
-                <br>
-
+                <button id="discard-all-button" class="btn-primary">Discard All</button>
+                <div id="play-area"></div>
             </div>
 
-            <div class="col-2">
+            <div>
                 <h2>Discard Pile</h2>
-                <div id="discardPile"></div>
+                <div id="discard-pile"></div>
+                <h4>Click to redraw</h4>
             </div>
 
         </div>
 
-    </div>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS, then our script file -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
     <script src="cards.js"></script>
 </body>

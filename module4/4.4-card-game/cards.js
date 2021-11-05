@@ -1,6 +1,8 @@
 $(function () {
-    $("#drawDeck").on("click", drawCard);
-    $("#discardAllButton").on("click", discardAllCards);
+    $("#draw-deck").on("click", drawCard);
+    $("#play-area").on("click", "img", discardOneCard);
+    $("#discard-pile").on("click", "img", redrawCard);
+    $("#discard-all-button").on("click", discardAllCards);
 });
 
 
@@ -17,16 +19,14 @@ function drawCard() {
     // set the image's alt text
     cardImage.attr("alt", "playing card");
 
-    // make the card clickable
-    cardImage.on("click", discardOneCard);
-
     // Add the new card as the last child of the play area
-    $("#playArea").append(cardImage);
+    $("#play-area").append(cardImage);
+}
 
-    // $("#playArea img").first().before(cardImage);
+function redrawCard(event) {
+    let clickedCard = $(event.target).remove();
 
-    // $("#playArea img").last().after(cardImage);
-
+    $("#play-area").append(clickedCard);
 }
 
 function discardOneCard(event) {
@@ -38,16 +38,16 @@ function discardOneCard(event) {
 
     // Remove any card image in the discard area
     // Then put the clicked card's image in the discard area
-    $("#discardPile").empty().append(clickedCard);
+    $("#discard-pile").empty().append(clickedCard);
 }
 
 function discardAllCards() {
     // find the last card in the play area
-    let lastCardDealt = $("#playArea img").last();
+    let lastCardDealt = $("#play-area img").last();
 
     // Remove all the cards from the play area
-    $("#playArea img").remove();
+    $("#play-area img").remove();
 
     // Add just the last card to the discard area
-    $("#discardPile").empty().append(lastCardDealt);
+    $("#discard-pile").empty().append(lastCardDealt);
 }
