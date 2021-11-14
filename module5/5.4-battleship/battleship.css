@@ -1,0 +1,100 @@
+body {
+    background: lightskyblue;
+}
+
+#playerOne fieldset {
+    border: 1px blue solid;
+}
+
+#playerOne legend, #playerOne h3 {
+    color: blue;
+}
+
+#playerTwo fieldset {
+    border: 1px darkmagenta solid;
+}
+
+fieldset input[type=checkbox] {
+    position: relative;
+}
+
+.sub3 {
+    left: 203px;
+    top: 10px;
+}
+
+.sub2 {
+    top: 10px;
+    left: 112px;
+}
+
+.sub1 {
+    top: 10px;
+    left: 23px;
+}
+
+.bship4 {
+    top: 13px;
+    left: 274px;
+}
+
+.bship3 {
+    top: 3px;
+    left: 189px;
+}
+
+.bship2 {
+    top: 3px;
+    left: 102px;
+}
+
+.bship1 {
+    top: 11px;
+    left: 15px;
+}
+
+.submarine {
+    background-image: url("submarine.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 349px;
+    height: 170px;
+}
+
+.battleship {
+    background-image: url("battleship.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 415px;
+    height: 156px;
+}
+
+#playerTwo legend, #playerTwo h3 {
+    color: darkmagenta;
+}
+
+fieldset {
+    padding: 10px 30px;
+}
+
+h1, h3, p {
+    text-align: center;
+}
+
+p {
+    color: firebrick;
+}
+
+img {
+    float: right;
+}
+
+span.gamemsg {
+    display: none;
+}
+
+#gameOverMsg {
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+}
