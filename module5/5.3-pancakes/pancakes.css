@@ -1,0 +1,17 @@
+body {
+    font-size: 20px;
+    padding: 50px;
+}
+
+button {
+    margin-bottom: 20px;
+}
+
+img {
+    padding-right: 25px;
+}
+
+span {
+    font-style: italic;
+    font-weight: bold;
+}

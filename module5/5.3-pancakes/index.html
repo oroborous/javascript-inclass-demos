@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="pancakes.css">
+    <title>Pancake Logic</title>
+</head>
+
+<body>
+    <div class="container w-50">
+        <h1>Pancake Logic</h1>
+
+        <div class="form-group">
+            <img src="img/pancakes.jpg" alt="pancakes">
+            <input type="checkbox" id="pancakes">
+            <label for="pancakes">I want pancakes</label>
+        </div>
+
+        <div class="form-group">
+            <img src="img/butter.jpg">
+            <input type="checkbox" id="butter">
+            <label for="butter">I have butter</label>
+        </div>
+
+        <div class="form-group">
+            <img src="img/syrup.jpg">
+            <input type="checkbox" id="syrup"/>
+            <label for="syrup">I have syrup</label>
+        </div>
+
+        <button class="btn btn-primary">Go To Store?</button>
+
+        <p>
+            Using nested ifs, will I go to the store? <span id="nested"></span>
+        </p>
+        <p>
+            Using no parentheses, will I go to the store? <span id="noPar"></span>
+        </p>
+        <p>
+            Using parentheses, will I go to the store? <span id="withPar"></span>
+        </p>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<script src="pancakes.js"></script>
+</html>
