@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="icecream.css">
+
+    <title>Ice Cream Shop</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Ice Cream Shop</h1>
+
+        <form>
+            <div class="grid">
+                <div class="form-group" id="flavorGroup">
+                    <label for="flavor">Flavor</label>
+                    <select id="flavor" name="flavor" class="form-control" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="vanilla">Vanilla</option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="strawberry">Strawberry</option>
+                    </select>
+                </div>
+
+                <div>
+                    <div class="form-group options" id="scoopsGroup">
+                        <label for="scoops">Scoops</label>
+                        <select id="scoops" name="scoops" class="form-control">
+                            <option disabled selected value>Select an option</option>
+                            <option value="single">One</option>
+                            <option value="double">Two</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group options" id="coneGroup">
+                        <label for="cone">Cone</label>
+                        <select id="cone" name="cone" class="form-control">
+                            <option disabled selected value>Select an option</option>
+                            <option value="cake">Cake</option>
+                            <option value="waffle">Waffle</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group options" id="toppingGroup">
+                        <label for="topping">Topping</label>
+                        <select id="topping" name="topping" class="form-control">
+                            <option disabled selected value>Select an option</option>
+                            <option value="peanuts">Peanuts</option>
+                            <option value="sprinkles">Sprinkles</option>
+                            <option value="fudge">Hot Fudge</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group options" id="maltGroup">
+                        <label for="malt">Malt</label>
+                        <select id="malt" name="malt" class="form-control">
+                            <option disabled selected value>Select an option</option>
+                            <option value="light">Light Malt</option>
+                            <option value="regular">Regular Malt</option>
+                            <option value="extra">Extra Malt</option>
+                        </select>
+                    </div>
+
+
+                </div>
+
+                <div class="form-group">
+                    <label for="style">Style</label>
+                    <select id="style" name="style" class="form-control" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="cone">Cone</option>
+                        <option value="dish">Dish</option>
+                        <option value="sundae">Sundae</option>
+                        <option value="malt">Malt</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-primary">Order</button>
+            </div>
+        </form>
+
+        <h2 id="summary"></h2>
+
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="icecream.js"></script>
+</body>
+</html>
