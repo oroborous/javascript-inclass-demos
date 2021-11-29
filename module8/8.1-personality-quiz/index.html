@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;800&family=Montserrat&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="quiz.css">
+    <title>What Percent 😺 Person vs. 🐶 Person Are You?</title>
+
+</head>
+<body>
+    <div class="container w-50">
+        <div class="row">
+            <div class="col">
+                <h1>What Percent<br>😺&nbsp;Person&nbsp;/&nbsp;🐶&nbsp;Person<br>Are You?</h1>
+            </div>
+        </div>
+
+        <form>
+            <fieldset id="q1">
+                <legend>Do you own a cat or a dog?</legend>
+                <div class="form-check">
+                    <input type="radio" id="q1-1" name="q1" data-cat="4" data-dog="0" class="form-check-input">
+                    <label for="q1-1" class="form-check-label">A cat.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q1-2" name="q1" data-cat="0" data-dog="4" class="form-check-input">
+                    <label for="q1-2" class="form-check-label">A dog.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q1-3" name="q1" data-cat="2" data-dog="2" class="form-check-input">
+                    <label for="q1-3" class="form-check-label">Both.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q1-4" name="q1" data-cat="0" data-dog="0" class="form-check-input">
+                    <label for="q1-4" class="form-check-label">I only own a hamster or some other pet.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q1-5" name="q1" data-cat="0" data-dog="0" class="form-check-input">
+                    <label for="q1-5" class="form-check-label">I don't own a pet.</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="q2">
+                <legend>How do you greet your friends?</legend>
+                <div class="form-check">
+                    <input type="radio" id="q2-1" name="q2" data-cat="4" data-dog="0" class="form-check-input">
+                    <label for="q2-1" class="form-check-label">Excitedly hug them.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q2-2" name="q2" data-cat="0" data-dog="4" class="form-check-input">
+                    <label for="q2-2" class="form-check-label">Vaguely acknowledge them with a nod or a grunt.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q2-3" name="q2" data-cat="2" data-dog="2" class="form-check-input">
+                    <label for="q2-3" class="form-check-label">Politely say hello.</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="q3">
+                <legend>Your friend just got a kitten. How do you react?</legend>
+                <div class="form-check">
+                    <input type="radio" id="q3-1" name="q3" data-cat="3" data-dog="1" class="form-check-input">
+                    <label for="q3-1" class="form-check-label">I have to go over to their place immediately.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q3-2" name="q3" data-cat="1" data-dog="3" class="form-check-input">
+                    <label for="q3-2" class="form-check-label">I ask about it politely but roll my eyes a little when
+                        they show too many pictures.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q3-3" name="q3" data-cat="0" data-dog="4" class="form-check-input">
+                    <label for="q3-3" class="form-check-label">I don't really care.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q3-4" name="q3" data-cat="4" data-dog="0" class="form-check-input">
+                    <label for="q3-4" class="form-check-label">I burst into tears at the wonderful concept.</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="q4">
+
+                <legend>What is your most valuable trait?</legend>
+                <div class="form-check">
+                    <input type="radio" id="q4-1" name="q4" data-cat="4" data-dog="0" class="form-check-input">
+                    <label for="q4-1" class="form-check-label">My looks.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q4-2" name="q4" data-cat="3" data-dog="1" class="form-check-input">
+                    <label for="q4-2" class="form-check-label">My brains.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q4-3" name="q4" data-cat="1" data-dog="3" class="form-check-input">
+                    <label for="q4-3" class="form-check-label">My brawn.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q4-4" name="q4" data-cat="0" data-dog="4" class="form-check-input">
+                    <label for="q4-4" class="form-check-label">My heart.</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="q5">
+                <legend>What trait do you value most in a friend?</legend>
+                <div class="form-check">
+                    <input type="radio" id="q5-1" name="q5" data-cat="0" data-dog="4" class="form-check-input">
+                    <label for="q5-1" class="form-check-label">Loyalty.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q5-2" name="q5" data-cat="1" data-dog="3" class="form-check-input">
+                    <label for="q5-2" class="form-check-label">Honesty.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q5-3" name="q5" data-cat="2" data-dog="2" class="form-check-input">
+                    <label for="q5-3" class="form-check-label">Intelligence.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q5-4" name="q5" data-cat="3" data-dog="1" class="form-check-input">
+                    <label for="q5-4" class="form-check-label">Amusement.</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="q6">
+                <legend>How do you like to spend your weekends?</legend>
+                <div class="form-check">
+                    <input type="radio" id="q6-1" name="q6" data-cat="4" data-dog="0" class="form-check-input">
+                    <label for="q6-1" class="form-check-label">Curled up alone in bed after a nice warm bath.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q6-2" name="q6" data-cat="3" data-dog="1" class="form-check-input">
+                    <label for="q6-2" class="form-check-label">Outdoors, climbing mountains and exploring
+                        nature.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q6-3" name="q6" data-cat="1" data-dog="3" class="form-check-input">
+                    <label for="q6-3" class="form-check-label">Quietly hanging out with my loved ones.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q6-4" name="q6" data-cat="0" data-dog="4" class="form-check-input">
+                    <label for="q6-4" class="form-check-label">Shopping and partying with a large group of
+                        friends.</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="q7">
+                <legend>Are you a morning person?</legend>
+                <div class="form-check">
+                    <input type="radio" id="q7-1" name="q7" data-cat="3" data-dog="1" class="form-check-input">
+                    <label for="q7-1" class="form-check-label">If you wake me I will end you.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q7-2" name="q7" data-cat="1" data-dog="3" class="form-check-input">
+                    <label for="q7-2" class="form-check-label">I like to get up early and seize the day.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q7-3" name="q7" data-cat="2" data-dog="2" class="form-check-input">
+                    <label for="q7-3" class="form-check-label">I get up but only because I have to.</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="q8">
+                <legend>Finally, which do you consider yourself to be?</legend>
+                <div class="form-check">
+                    <input type="radio" id="q8-1" name="q8" data-cat="4" data-dog="0" class="form-check-input">
+                    <label for="q8-1" class="form-check-label">Cat person.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q8-2" name="q8" data-cat="0" data-dog="4" class="form-check-input">
+                    <label for="q8-2" class="form-check-label">Dog person.</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q8-3" name="q8" data-cat="2" data-dog="2" class="form-check-input">
+                    <label for="q8-3" class="form-check-label">All are equal in the eyes of the cuteness gods.</label>
+                </div>
+            </fieldset>
+
+            <div class="row" id="scoreQuizButton">
+                <div class="col">
+                    <button class="btn btn-primary">See My Result!</button>
+                </div>
+            </div>
+
+            <div class="row" id="results">
+                <div class="col">
+                    <div class="row no-gutters">
+                        <div class="col-1 emoji">😺</div>
+                        <div class="col-10">
+                            <span id="percentCat"></span><span id="percentDog"></span>
+                        </div>
+                        <div class="col-1 emoji">🐶</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2 id="description"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <footer>
+                Quiz questions borrowed from <a
+                    href="https://www.buzzfeed.com/hattiesoykan/are-you-a-cat-or-a-dog-person">BuzzFeed</a>.
+            </footer>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+    margin: 25px;
+    background-image: url("pawprints.jpg");
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#scoreQuizButton {
+    display: none;
+    margin-top: 50px;
+}
+
+#results {
+    margin-top: 50px;
+    display: none;
+}
+
+#percentCat, #percentDog {
+    width: 50%;
+    display: inline-block;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+#percentCat {
+    background-color: bisque;
+}
+
+#percentDog {
+    background-color: goldenrod;
+}
+
+fieldset {
+    padding: 0 25px 25px 25px;
+    text-align: left;
+    display: none;
+    font-size: x-large;
+}
+
+legend {
+    padding-top: 30px;
+    font-size: xx-large;
+}
+
+.emoji {
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+/* Sticky footer styles
+From https://getbootstrap.com/docs/4.0/examples/sticky-footer/
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 25px; /* Margin bottom by footer height */
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25px; /* Set the fixed height of the footer here */
+    line-height: 25px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+}
