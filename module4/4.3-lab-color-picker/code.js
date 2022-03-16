@@ -1,6 +1,4 @@
-$(function() {
-    $("form").on("submit", changeBackground);
-});
+$("form").on("submit", changeBackground);
 
 function changeBackground(event) {
     event.preventDefault();

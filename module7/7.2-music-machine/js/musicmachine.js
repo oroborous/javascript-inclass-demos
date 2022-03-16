@@ -17,58 +17,57 @@ let recordedNotes = [];
 // TODO
 //  Create two arrays (songOne and songTwo) that hold notes in the form "G,3" or "A,5"
 
-$(document).ready(function () {
 
-    // Create the grid of keyboard keys
-    for (let octave = MIN_OCTAVE; octave <= MAX_OCTAVE; octave++) {
-        // Create a new row with a Bootstrap class
-        let row = $("<div>").addClass("row");
-        $("#keyboard").append(row);
+// Create the grid of keyboard keys
+for (let octave = MIN_OCTAVE; octave <= MAX_OCTAVE; octave++) {
+    // Create a new row with a Bootstrap class
+    let row = $("<div>").addClass("row");
+    $("#keyboard").append(row);
 
-        // Loop over array of color values
-        for (let i = 0; i < allColors.length; i++) {
-            // Create a <span> to be the clickable key
-            // with two classes, "key" and Bootstrap's "col"
-            let keyboardKey = $("<span>").addClass("key col");
-            row.append(keyboardKey);
+    // Loop over array of color values
+    for (let i = 0; i < allColors.length; i++) {
+        // Create a <span> to be the clickable key
+        // with two classes, "key" and Bootstrap's "col"
+        let keyboardKey = $("<span>").addClass("key col");
+        row.append(keyboardKey);
 
-            // Set background color with CSS
-            let color = allColors[i];
-            keyboardKey.css("background-color", color);
+        // Set background color with CSS
+        let color = allColors[i];
+        keyboardKey.css("background-color", color);
 
-            // Set this key's note with data-note
-            let note = allNotes[i];
-            keyboardKey.data("note", note);
+        // Set this key's note with data-note
+        let note = allNotes[i];
+        keyboardKey.data("note", note);
 
-            // Set this key's octave with data-octave
-            keyboardKey.data("octave", octave);
+        // Set this key's octave with data-octave
+        keyboardKey.data("octave", octave);
 
-            // Text for display
-            keyboardKey.text(`${note}${octave}`);
+        // Text for display
+        keyboardKey.text(`${note}${octave}`);
 
-            // Use note and octave to make a unique ID
-            keyboardKey.attr("id", `${note}${octave}`);
-        }
+        // Use note and octave to make a unique ID
+        keyboardKey.attr("id", `${note}${octave}`);
     }
+}
 
-    // This anonymous function makes the Play Recording
-    // button play the array of recorded notes
-    $("#playButton").on("click", function () {
-        playRecording(recordedNotes);
-    });
-    $("#songOneButton").on("click", function() {
-        playRecording(songOne);
-    });
-    $("#songTwoButton").on("click", function() {
-        playRecording(songTwo);
-    });
-    $("#keyboard").on("click", ".key", noteClicked);
-
-    // Assign functions to the other buttons
-    $("#recordButton").on("click", toggleRecording);
-    $("#clearButton").on("click", clearRecording);
-
+// This anonymous function makes the Play Recording
+// button play the array of recorded notes
+$("#playButton").on("click", function () {
+    playRecording(recordedNotes);
 });
+$("#songOneButton").on("click", function () {
+    playRecording(songOne);
+});
+$("#songTwoButton").on("click", function () {
+    playRecording(songTwo);
+});
+
+$("#keyboard").on("click", ".key", noteClicked);
+
+// Assign functions to the other buttons
+$("#recordButton").on("click", toggleRecording);
+$("#clearButton").on("click", clearRecording);
+
 
 function clearRecording() {
     // create a new, empty array
@@ -101,7 +100,7 @@ function playRecordedNote(recordedNote) {
     // recordedNote will contain a string like "C,3"
     // Split the string into an array where index 0
     // holds the note, and index 1 holds the octave
-    let [note, octave]  = recordedNote.split(",");
+    let [note, octave] = recordedNote.split(",");
     // Put the note and octave on the screen
     $("#keyPlaying").text(note + octave);
     // Find all keys and remove the class that gives

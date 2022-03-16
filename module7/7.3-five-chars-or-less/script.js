@@ -1,7 +1,5 @@
-$(document).ready(function () {
-    $("form").on("submit", storeWord);
-    $("button#printWords").on("click", printWords);
-});
+$("form").on("submit", storeWord);
+$("button#printWords").on("click", printWords);
 
 // This array will contain other arrays
 let wordsByLength = [

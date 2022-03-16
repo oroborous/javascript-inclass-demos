@@ -1,6 +1,4 @@
-$(document).ready(function () {
-    $("button").click(checkShopping);
-});
+$("button").click(checkShopping);
 
 function checkShopping() {
     let wantPancakes = $("input#pancakes").is(":checked");

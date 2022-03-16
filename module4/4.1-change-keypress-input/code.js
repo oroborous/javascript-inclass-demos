@@ -1,8 +1,6 @@
-$(function() {
-    $("input#change-box").on("change", boxChanged);
-    $("input#key-box").on("keypress", keyTyped);
-    $("input#js-slider").on("input", sliderMoved);
-});
+$("input#change-box").on("change", boxChanged);
+$("input#key-box").on("keypress", keyTyped);
+$("input#js-slider").on("input", sliderMoved);
 
 function boxChanged() {
     let boxValue = $("input#change-box").val();

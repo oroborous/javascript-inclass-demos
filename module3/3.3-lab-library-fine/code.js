@@ -1,6 +1,4 @@
-$(function () {
-    $("form").on("submit", calculateFine);
-});
+$("form").on("submit", calculateFine);
 
 // add "event" parameter to function when working with forms
 function calculateFine(event) {

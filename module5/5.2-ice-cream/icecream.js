@@ -1,7 +1,5 @@
-$(document).ready(function () {
-    $("form").on("submit", orderIceCream);
-    $("#style").on("change", styleChosen);
-});
+$("form").on("submit", orderIceCream);
+$("#style").on("change", styleChosen);
 
 function styleChosen() {
     let style = $("#style").val();

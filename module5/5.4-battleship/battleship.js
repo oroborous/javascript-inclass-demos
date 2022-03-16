@@ -1,6 +1,4 @@
-$(document).ready(function () {
-    $(":checkbox").on("change", fireMissile);
-});
+$(":checkbox").on("change", fireMissile);
 
 function fireMissile() {
     // Test if player 1's submarine was sunk

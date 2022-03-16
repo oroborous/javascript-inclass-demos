@@ -1,6 +1,4 @@
-$(document).ready(function () {
-    $("form").on("submit", checkSentence);
-});
+$("form").on("submit", checkSentence);
 
 function checkSentence(event) {
     event.preventDefault();

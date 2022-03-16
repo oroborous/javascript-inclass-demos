@@ -1,6 +1,4 @@
-$(function () {
-    $("form").on("submit", orderSoaps);
-});
+$("form").on("submit", orderSoaps);
 
 function orderSoaps(event) {
     // Don't actually submit the form!

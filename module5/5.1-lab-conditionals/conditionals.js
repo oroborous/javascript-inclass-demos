@@ -1,12 +1,11 @@
-$(document).ready(function () {
-    // add the functions as event listeners
-    // to the forms in the HTML
-    $("form#clickForm").on("submit", countClick);
-    $("form#ageForm").on("submit", checkAge);
-    $("form#taxForm").on("submit", calcSalesTax);
-    $("form#catForm").on("submit", recommendFood);
-    $("form#cardForm").on("submit", drawCard);
-});
+// add the functions as event listeners
+// to the forms in the HTML
+$("form#clickForm").on("submit", countClick);
+$("form#ageForm").on("submit", checkAge);
+$("form#taxForm").on("submit", calcSalesTax);
+$("form#catForm").on("submit", recommendFood);
+$("form#cardForm").on("submit", drawCard);
+
 
 let clicks = 0;
 

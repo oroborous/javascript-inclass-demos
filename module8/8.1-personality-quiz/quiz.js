@@ -1,7 +1,5 @@
-$(document).ready(function () {
-    $(":radio").on("change", answerQuestion);
-    $("form").on("submit", scoreQuiz);
-});
+$(":radio").on("change", answerQuestion);
+$("form").on("submit", scoreQuiz);
 
 const POINTS_PER_QUESTION = 4;
 const TOTAL_QUESTIONS = 8;

@@ -1,6 +1,4 @@
-$(function() {
-    $("input[type=number]").on("change", calculateOrderTotal);
-});
+$("input[type=number]").on("change", calculateOrderTotal);
 
 function calculateOrderTotal() {
     const DONATION_PRICE = 19.99;

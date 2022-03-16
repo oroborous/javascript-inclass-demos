@@ -24,36 +24,36 @@
     </style>
 </head>
 <body>
-        <h1>jQuery Card Table</h1>
+    <h1>jQuery Card Table</h1>
 
-        <div id="grid">
+    <div id="grid">
 
-            <div>
-                <h2>Draw Deck</h2>
-                <img id="draw-deck" src="card-images/blue_back.png"
-                     alt="blue card back"
-                     height="153" width="100"/>
-                <h4>Click to draw</h4>
-            </div>
-
-            <div>
-                <h2>Play Area</h2>
-                <h4>Click a card to discard</h4>
-                <button id="discard-all-button" class="btn-primary">Discard All</button>
-                <div id="play-area"></div>
-            </div>
-
-            <div>
-                <h2>Discard Pile</h2>
-                <div id="discard-pile"></div>
-                <h4>Click to redraw</h4>
-            </div>
-
+        <div>
+            <h2>Draw Deck</h2>
+            <img id="draw-deck" src="card-images/blue_back.png"
+                 alt="blue card back"
+                 height="153" width="100"/>
+            <h4>Click to draw</h4>
         </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        <div>
+            <h2>Play Area</h2>
+            <h4>Click a card to discard</h4>
+            <button id="discard-all-button" class="btn-primary">Discard All</button>
+            <div id="play-area"></div>
+        </div>
+
+        <div>
+            <h2>Discard Pile</h2>
+            <div id="discard-pile"></div>
+            <h4>Click to redraw</h4>
+        </div>
+
+    </div>
+
+    <script defer src="https://code.jquery.com/jquery-3.5.1.js"
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
             crossorigin="anonymous"></script>
-    <script src="cards.js"></script>
+    <script defer src="cards.js"></script>
 </body>
 </html>

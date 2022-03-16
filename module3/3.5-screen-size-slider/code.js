@@ -1,9 +1,7 @@
 // min and max formulas from https://www.the-home-cinema-guide.com/tv-viewing-distance.html
 
-$(function() {
-    $("form").on("submit", calculateDistance);
-    $("input#screen-size").on("input", showScreenSize);
-});
+$("form").on("submit", calculateDistance);
+$("input#screen-size").on("input", showScreenSize);
 
 // add "event" parameter to function when working with forms
 function calculateDistance(event) {

@@ -1,6 +1,4 @@
-$(function() {
-    $("form").on("submit", createWrestlerName);
-});
+$("form").on("submit", createWrestlerName);
 
 // add "event" parameter to function when working with forms
 function createWrestlerName(event) {

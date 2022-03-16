@@ -1,5 +1,25 @@
+function englishGreeting() {
+    sayHello("Good morning!");
+}
+
+function germanGreeting() {
+    sayHello("Guten tag!");
+}
+
+function frenchGreeting() {
+    sayHello("Bonjour!");
+}
+
 function sayHello(greeting) {
     $("p#greeting").text(greeting);
+}
+
+function rollSixSidedDie() {
+    rollDie(6);
+}
+
+function rollTenSidedDie() {
+    rollDie(10);
 }
 
 function rollDie(sides) {
@@ -21,16 +41,9 @@ function drawCard() {
 }
 
 
-$("h2#english").on("click", function() {
-   sayHello("Hi");
-});
-$("h2#french").on("click", function() {
-    sayHello("Bonjour");
-});
-$("h2#german").on("click", function() {
-    sayHello("Guten tag");
-});
+$("h2#english").on("click", englishGreeting);
+$("h2#french").on("click", frenchGreeting);
+$("h2#german").on("click", germanGreeting);
+
 $("button").on("click", drawCard);
-$("img").on("click", function() {
-    rollDie(6);
-});
+$("img").on("click", rollSixSidedDie);

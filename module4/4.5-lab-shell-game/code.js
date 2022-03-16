@@ -1,6 +1,4 @@
-$(function() {
-    $("form").on("submit", revealCard);
-});
+$("form").on("submit", revealCard);
 
 function revealCard(event) {
     // stop form from submitting

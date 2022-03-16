@@ -1,9 +1,7 @@
-$(function () {
-    $("#draw-deck").on("click", drawCard);
-    $("#play-area").on("click", "img", discardOneCard);
-    $("#discard-pile").on("click", "img", redrawCard);
-    $("#discard-all-button").on("click", discardAllCards);
-});
+$("#draw-deck").on("click", drawCard);
+$("#play-area").on("click", "img", discardOneCard);
+$("#discard-pile").on("click", "img", redrawCard);
+$("#discard-all-button").on("click", discardAllCards);
 
 
 function drawCard() {
@@ -16,7 +14,7 @@ function drawCard() {
     // set the image's src attribute
     cardImage.attr("src", `card-images/${randomNumber}.png`);
 
-    // set the image's alt text
+    // set the image's alt attribute
     cardImage.attr("alt", "playing card");
 
     // Add the new card as the last child of the play area
@@ -24,21 +22,13 @@ function drawCard() {
 }
 
 function redrawCard(event) {
-    let clickedCard = $(event.target).remove();
-
-    $("#play-area").append(clickedCard);
+    $("#play-area").append(event.target);
 }
 
 function discardOneCard(event) {
-    // Get the card that was clicked
-    let clickedCard = $(event.target);
-
-    // Remove the clicked card from the play area (its current parent)
-    clickedCard.remove();
-
     // Remove any card image in the discard area
     // Then put the clicked card's image in the discard area
-    $("#discard-pile").empty().append(clickedCard);
+    $("#discard-pile").empty().append(event.target);
 }
 
 function discardAllCards() {
