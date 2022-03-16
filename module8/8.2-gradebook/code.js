@@ -1,8 +1,20 @@
 let students = [
-    {studentName: "Stacy", pointsEarned: 9, pointsPossible: 10, getPercent: function() { return (this.pointsEarned / this.pointsPossible) * 100 + "%";}},
-    {studentName: "Gigi", pointsEarned: 7, pointsPossible: 10, getPercent: function() { return (this.pointsEarned / this.pointsPossible) * 100 + "%";}},
-    {studentName: "Phil", pointsEarned: 8, pointsPossible: 10, getPercent: function() { return (this.pointsEarned / this.pointsPossible) * 100 + "%";}}
-    ];
+    {
+        studentName: "Stacy", pointsEarned: 9, pointsPossible: 10, getPercent: function () {
+            return (this.pointsEarned / this.pointsPossible) * 100 + "%";
+        }
+    },
+    {
+        studentName: "Gigi", pointsEarned: 7, pointsPossible: 10, getPercent: function () {
+            return (this.pointsEarned / this.pointsPossible) * 100 + "%";
+        }
+    },
+    {
+        studentName: "Phil", pointsEarned: 8, pointsPossible: 10, getPercent: function () {
+            return (this.pointsEarned / this.pointsPossible) * 100 + "%";
+        }
+    }
+];
 
 function addStudent(event) {
     event.preventDefault();
@@ -17,7 +29,9 @@ function addStudent(event) {
         studentName: name,
         pointsEarned: earned,
         pointsPossible: possible,
-        getPercent: function() { return (this.pointsEarned / this.pointsPossible) * 100 + "%";}
+        getPercent: function () {
+            return (this.pointsEarned / this.pointsPossible) * 100 + "%";
+        }
     };
 
     // add student object to array
@@ -74,11 +88,6 @@ function sortByGrade() {
 }
 
 
-
-function initPage() {
-    $("form").on("submit", addStudent);
-    $("button#sortName").on("click", sortByName);
-    $("button#sortGrade").on("click", sortByGrade);
-}
-
-$(initPage);
+$("form").on("submit", addStudent);
+$("button#sortName").on("click", sortByName);
+$("button#sortGrade").on("click", sortByGrade);
